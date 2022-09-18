@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YURI HANYU Portfolio</title>
+    <!-- Googleフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container w-container">
+            <div class="site-logo"><a href="index.html"><img src="img/logo.svg" alt="YURI HANYU PORTFOLIO" width="80" height="80"></a></div>
+
+            <!-- ナビゲーションメニュー -->
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="index.html#works">WORKS</a></li>
+                    <li><a href="index.html#about">ABOUT</a></li>
+                    <li><a href="index.html#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <!-- ハンバーガーメニュー -->
+            <div class="hamburger" onclick="document.querySelector('html').classList.toggle('open')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="works-desc">
+        <div class="w-container">
+            <h2>
+                架空の銀行サイト
+            </h2>
+            <div class="works-content">
+                <div class="works-thumbnail">
+                    <img src="img/sakura_bank_thumbnail.webp" alt="架空の銀行のモックアップ">
+                </div>
+
+                <div class="text-box">
+                    <dl class="overview">                
+                        <dt>URL</dt>
+                        <dd><a class="under-line" href="https://hanyu-yuri.com/sakura_bank/" target="_blank">https://hanyu-yuri.com/sakura_bank/</a>（Basic認証にてアクセス制限をしております）</dd>
+
+                        <dt>User</dt>
+                        <dd>sakura</dd>
+
+                        <dt>パスワード</dt>
+                        <dd>
+                            nfkyqmxc
+                        </dd>
+
+                        <dt>Github</dt>
+                        <dd><a class="under-line" href="https://github.com/Yuri-Hanyu/sakura_bank" target="_blank">https://github.com/Yuri-Hanyu/sakura_bank</a></dd>
+                    </dl>
+                </div>
+
+                <div class="index">
+                    <span class="index-title">目次</span>
+                    <ol>
+                        <li><a href="#first">はじめに</a></li>
+                        <li><a href="#header">ヘッダーについて</a></li>
+                        <li><a href="#hero">ヒーローエリアについて</a></li>
+                        <li><a href="#content">コンテンツエリアついて</a></li>
+                        <li><a href="#footer">フッターについて</a></li>
+                    </ol>
+                </div>
+
+                <div class="works-text animate slide-from-left delay">
+                    <h3 id="first" class="animate slide-from-left">はじめに</h3>
+                    <p>
+                        生活基盤である銀行のサイトですので、<span class="marker strong">「どこにどのような情報があるかがわかりやすい」</span>設計を目指しました。
+                    </p>
+                    
+                    <p>
+                        既存の銀行サイトを50件以上リサーチし、<span class="strong">「お客様がアクセスしたい情報は何か」</span>、<span class="strong">「情報の優先順位をいかにしてつけるか」</span>を分析。
+                    </p>
+
+                    <p>
+                        また、<span class="strong">カルーセル</span>や<span class="strong">アコーディオン</span>、<span class="strong">タブUI</span>を採用することで、サイトの利便性を向上させました。
+                    </p>
+                </div>
+                
+
+                <h3 id="header" class="animate slide-from-left">ヘッダーについて</h3>
+                <div class="works-text animate slide-from-left delay">
+                    <p>
+                        グローバルメニューを上段、下段に分けました。
+                    </p>
+    
+                    <p>
+                        上段には、<span class="strong">「ATM」、「検索」、「お問い合わせ」</span>のリンクを設定。
+                        <span class="marker strong">早急に悩みを解決したいお客様のストレス軽減</span>を目的とし、この設計を採用しました。<br>
+                        スマートフォン版ではハンバーガーメニュー展開後のエリアに配置しております。
+                    </p>
+                        
+                    <p>
+                        下段には、お客様の属性別のメニューを設置。
+                        「個人のお客様」タブをクリックすると、サブメニューが展開される仕組みです。<br>
+                        サブメニューはヒーローエリアに重なり、スクロールしても位置は動かないようにしました。
+                    </p> 
+
+                </div>
+
+                <h3 id="hero" class="animate slide-from-left">ヒーローエリアについて</h3>
+                <div class="works-text animate slide-from-left delay">
+                    <p>
+                        WEBサイトにアクセスするお客様のインターネットバンキング使用率は高いと考えます。<br>
+                        よって、一番目につきやすいヒーローエリアに<span class="strong">ログインボタン</span>を設置しました。
+                    </p>
+    
+                    <p>
+                        <span class="strong marker">画面の幅が変動しても対応</span>できるように、右端からの距離は<span class="strong">%単位</span>で指定しています。
+                    </p>
+                </div>
+
+                <h3 id="content" class="animate slide-from-left">コンテンツエリアについて</h3>
+                <div class="works-content animate slide-from-left delay">
+                    <p>
+                        <span class="strong">「目的から探す」、「ライフイベントから探す」</span>内はグリッドレイアウトを使用して横並びにしています。<br>
+                        <span class="strong marker">今後アイテム数が増減しても対応が容易であり、アイテム同士の間隔を調整しやすい</span>ため採用しました。
+                    </p>
+    
+                    <p>
+                        <span class="strong">「キャンペーン」</span>エリアには<span class="strong">カルーセル</span>を採用。
+                        JavaScriptを使用して作りました。<br>
+                        画像をflexboxで横並びにし、1枚あたりの幅を取得。画像のインデックスに応じて移動距離が変化するようにしています。
+                    </p>
+    
+                    <p>
+                        <span class="strong">「よくあるご質問」</span>エリアには<span class="strong">アコーディオン</span>を採用。
+                        こちらもJavaScriptを使用しています。<br>
+                        矢印ボタンを押した際に向きを上下にアニメーションさせることで、<span class="strong marker">開閉のステータスをわかりやくしています。</span>
+    
+                    </p>
+    
+                    <p>
+                        <span class="strong">「お知らせ・ニュースリリース」</span>エリアには<span class="strong">タブUI</span>を採用しました。<br>
+                        ２項目を同時に並べてしまうと<span class="strong">スクロール量が増え</span>、お客様にとってストレスになってしまうと考えたからです。
+    
+                    </p>
+                </div>
+
+                <h3 id="footer" class="animate slide-from-left">フッターについて</h3>
+                <div class="works-text animate slide-from-left delay">
+                    <p>
+                        SNSアイコンは、四角形の中にアイコンを配置した後に円形にくりぬいています。<br>
+                    </p>
+                    
+                    <p>
+                        フッター内メニューは、お客様の目的別のリンクを配置し、<span class="strong">主要サービスにアクセスしやすくしています。</span>
+                    </p>
+                </div>
+            </div>
+            <a class="btn left animate slide-from-left delay" href="index.html">TOPへ戻る</a>
+            
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container w-container">
+            <div footer-logo>
+                <img src="img/logo_wh.svg" alt="" width="80px" height="80px">
+                <p class="site-name">YURI HANYU</p>
+            </div>
+            <ul class="footer-list">
+                <li><a href="index.html">TOP</a></li>
+                <li><a href="index.html#works">WORKS</a></li>
+                <li><a href="index.html#about">ABOUT</a></li>
+                <li><a href="index.html#contact">CONTACT</a></li>
+            </ul>
+        </div>
+        <p class="copy">&copy; YURI HANYU All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

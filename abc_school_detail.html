@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YURI HANYU Portfolio</title>
+    <!-- Googleフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container w-container">
+            <div class="site-logo"><a href="index.html"><img src="img/logo.svg" alt="YURI HANYU PORTFOLIO" width="80" height="80"></a></div>
+
+            <!-- ナビゲーションメニュー -->
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="index.html#works">WORKS</a></li>
+                    <li><a href="index.html#about">ABOUT</a></li>
+                    <li><a href="index.html#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <!-- ハンバーガーメニュー -->
+            <div class="hamburger" onclick="document.querySelector('html').classList.toggle('open')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="works-desc">
+        <div class="w-container">
+            <h2>
+                架空の専門学校サイト
+            </h2>
+            <div class="works-content">
+                <div class="works-thumbnail">
+                    <img src="img/abc_school_thumbnail.webp" alt="架空の専門学校のモックアップ">
+                </div>
+
+                <div class="text-box">
+                    <dl class="overview">                
+                        <dt>URL</dt>
+                        <dd><a class="under-line" href="https://hanyu-yuri.com/abc_school/" target="_blank">https://hanyu-yuri.com/abc_school/</a>（Basic認証にてアクセス制限をしております）</dd>
+
+                        <dt>User</dt>
+                        <dd>abc</dd>
+
+                        <dt>パスワード</dt>
+                        <dd>         
+                            y3CEUdaB
+                        </dd>
+
+                        <dt>Github</dt>
+                        <dd><a class="under-line" href="https://github.com/Yuri-Hanyu/abc_school" target="_blank">https://github.com/Yuri-Hanyu/abc_school</a></dd>
+                    </dl>
+                </div>
+
+                <div class="index">
+                    <span class="index-title">目次</span>
+                    <ol>
+                        <li><a href="#first">はじめに</a></li>
+                        <li><a href="#header">ヘッダーについて</a></li>
+                        <li><a href="#hero">ヒーローエリアについて</a></li>
+                        <li><a href="#content">コンテンツエリアついて</a></li>
+                        <li><a href="#action">資料請求エリアついて</a></li>
+                        <li><a href="#footer">フッターについて</a></li>
+                    </ol>
+                </div>
+
+                <div class="works-text animate slide-from-left delay">
+                    <h3 id="first" class="animate slide-from-left">はじめに</h3>
+                    <p>
+                        <span class="marker strong">信頼感と近代的な要素を両立</span>したサイトを作りたいと思い、専門学校をテーマに選びました。
+                    </p>
+                    
+                    <p>
+                        また、<span class="marker strong">資料請求へのアクションを促す</span>ような構成を意識しました。
+                        <br>資料請求ボタンの周りにパンフレットの表紙をふわふわとアニメーションさせ、目立たせています。
+                    </p>
+                </div>
+                
+
+                <h3 id="header" class="animate slide-from-left">ヘッダーについて</h3>
+                <div class="works-text animate slide-from-left delay">
+                    <p>
+                        スタイリッシュにするため、英語主体のメニューにしながらも、<span class="strong">ユーザーを迷わせないように</span>日本語のサブタイトルも下部に記載しました。
+                    </p>
+    
+                    <p>
+                        メニューには<span class="strong">グラデーション</span>をかけ、のっぺりとした印象を与えないようにしています。
+                    </p>
+                </div>
+
+                <h3 id="hero" class="animate slide-from-left">ヒーローエリアについて</h3>
+                <div class="works-text animate slide-from-left delay">
+                    <p>
+                        白いキャッチコピーが<span class="strong">背景に埋もれてしまわない</span>ように、ヒーローエリア内を覆うdiv要素に黒いフィルターをかけました。
+                    </p>
+    
+                    <p>
+                        また、ヒーローエリアの背景画像に<span class="strong">「object-fit: cover;」</span>を指定することで、<span class="strong marker">画面幅が変動してもトリミング</span>されるようにしています。
+                    </p>
+                </div>
+
+                <h3 id="content" class="animate slide-from-left">コンテンツエリアについて</h3>
+                <div class="works-content animate slide-from-left delay">
+                    <p>
+                        <span class="strong">「当学院について」</span>内は、画像にボックスシャドウをかけました。黒背景に暗い画像を重ねた際に<span class="strong">メリハリがつく</span>と考えたからです。
+                    </p>
+    
+                    <p>
+                        <span class="strong">「当学院の強み」</span>エリアでは、4項目がひとつずつ現れるように、<span class="strong">animation-delay</span>の設定にこだわりました。
+                    </p>
+    
+                    <p>
+                        <span class="strong">「授業内容」</span>エリアにはアコーディオンを採用。 JavaScriptを使用しています。<span class="strong">ステータスの変化がわかりやすい</span>ように、開いた項目だけ色が変わるようにしました。
+                    </p>
+    
+                    <p>
+                        <span class="strong">「キャンパス紹介」</span>エリアでは、Flexboxを使用し画像と文章を並べています。 row-reverseを指定し、左右交互にアイテムを配置することで、<span class="strong">Z字状に視線誘導</span>ができるようにしました。
+                    </p>
+                </div>
+
+                <h3 id="action" class="animate slide-from-left">資料請求エリアについて</h3>
+                <div class="works-text animate slide-from-left delay">
+                    <p>
+                        ボタン上部に「簡単3分!」の吹き出しを設置し、<span class="strong marker">資料請求へのハードルを下げよう</span>と試みました。
+                    </p>
+                    
+                    <p>
+                        また、ボタン横にパンフレットの表紙をふわふわとアニメーションさせました。<br>
+                        どのようなパンフレットがもらえるのか、<span class="strong">具体的なイメージが湧きやすくなる</span>と考えたからです。
+                    </p>
+                </div>
+
+                <h3 id="footer" class="animate slide-from-left">フッターについて</h3>
+                <div class="works-text animate slide-from-left delay">
+                    <p>
+                        フリーダイアルのアイコンは、装飾的な意味合いが強いため疑似要素で配置しました。
+                    </p>
+                    
+                    <p>
+                        SNSリンクアイコンは、hover時にズームします。<span class="strong">ブランドカラーを変えずに</span>hoverしたことがわかるように設定しました。
+                    </p>
+                </div>
+            </div>
+            <a class="btn left animate slide-from-left delay" href="index.html">TOPへ戻る</a>
+            
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container w-container">
+            <div footer-logo>
+                <img src="img/logo_wh.svg" alt="" width="80px" height="80px">
+                <p class="site-name">YURI HANYU</p>
+            </div>
+            <ul class="footer-list">
+                <li><a href="index.html">TOP</a></li>
+                <li><a href="index.html#works">WORKS</a></li>
+                <li><a href="index.html#about">ABOUT</a></li>
+                <li><a href="index.html#contact">CONTACT</a></li>
+            </ul>
+        </div>
+        <p class="copy">&copy; YURI HANYU All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

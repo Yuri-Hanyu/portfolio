@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YURI HANYU Portfolio</title>
+    <!-- Googleフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container w-container">
+            <div class="site-logo"><a href="index.html"><img src="img/logo.svg" alt="YURI HANYU PORTFOLIO" width="80" height="80"></a></div>
+
+            <!-- ナビゲーションメニュー -->
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="index.html#works">WORKS</a></li>
+                    <li><a href="index.html#about">ABOUT</a></li>
+                    <li><a href="index.html#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <!-- ハンバーガーメニュー -->
+            <div class="hamburger" onclick="document.querySelector('html').classList.toggle('open')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ヒーローエリア -->
+    <section class="hero">
+        <div class="hero-container w-container">
+            <span class="attribute">コーダー志望</span>
+            <h1>
+                YURI <br>
+                HANYU<br>
+                PORTFOLIO
+            </h1>
+        </div>
+    </section>
+
+    <!-- WORKS -->
+    <section id="works">
+        <div class="w-container">
+            <h2 class="animate slide-from-left">
+                WORKS
+                <span>制作物</span>
+            </h2>
+
+            <div class="item">
+                <img class="animate" src="img/abc_school_thumbnail.webp" alt="架空の専門のモックアップ">
+                <div class="text animate slide-from-right delay">
+                    <h3>架空の専門学校サイト</h3>
+                    <dl class="overview">
+                        <dt>URL</dt>
+                        <dd>
+                            <a class="under-line" href="https://hanyu-yuri.com/abc_school/" target="_blank">https://hanyu-yuri.com/abc_school/</a>
+                            （Basic認証にてアクセス制限をしております）
+                        </dd>
+                        
+                        <dt>User</dt>
+                        <dd>abc</dd>
+
+                        <dt>パスワード</dt>
+                        <dd>y3CEUdaB</dd>
+                        
+                        <dt>Github</dt>
+                        <dd><a class="under-line" href="https://github.com/Yuri-Hanyu/abc_school" target="_blank">https://github.com/Yuri-Hanyu/abc_school</a></dd>
+                 
+                        <dt>担当範囲</dt>
+                        <dd>
+                            <ul>
+                                <li>企画</li>
+                                <li>ワイヤーフレーム作成(figma)</li>
+                                <li>コーディング<br>(HTML/CSS/JavaScript)</li>
+                            </ul>
+                        </dd>
+                        
+                        <dt>制作時間</dt>
+                        <dd>
+                            50時間<br>
+                            (内コーディング35時間）
+                        </dd>
+
+                        <dt>ひとこと</dt>
+                        <dd><span class="strong marker">信頼感と近代的な要素を両立したサイト</span>を作りたい、という思いから専門学校をテーマに選びました。</dd>
+                    </dl>
+                    <a class="btn animate delay" href="abc_school_detail.html">詳しい説明を見る</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <img class="animate" src="img/sakura_bank_thumbnail.webp" alt="架空の銀行のモックアップ">
+                <div class="text animate slide-from-right delay">
+                    <h3>架空の銀行サイト</h3>
+                    <dl class="overview">
+                        <dt>URL</dt>
+                        <dd>
+                            <a class="under-line" href="https://hanyu-yuri.com/sakura_bank/" target="_blank">https://hanyu-yuri.com/sakura_bank/</a>
+                            （Basic認証にてアクセス制限をしております）
+                        </dd>
+                        
+                        <dt>User</dt>
+                        <dd>sakura</dd>
+
+                        <dt>パスワード</dt>
+                        <dd>
+                            nfkyqmxc
+                        </dd>
+                        
+                        <dt>Github</dt>
+                        <dd><a class="under-line" href="https://github.com/Yuri-Hanyu/sakura_bank" target="_blank">https://github.com/Yuri-Hanyu/sakura_bank</a></dd>
+                 
+                        <dt>担当範囲</dt>
+                        <dd>
+                            <ul>
+                                <li>企画</li>
+                                <li>デザイン(figma)</li>
+                                <li>コーディング<br>(HTML/CSS/JavaScript)</li>
+                            </ul>
+                            ※ロゴ・バナーはジェネレーター(canva)使用
+                        </dd>
+                        
+                        <dt>制作時間</dt>
+                        <dd>
+                            50時間<br>
+                            (内コーディング20時間)
+                        </dd>
+
+                        <dt>ひとこと</dt>
+                        <dd><span class="strong marker">「幅広い年齢層のお客様にとってわかりやすいサイト」</span>を制作したい思いから銀行をテーマに選択しました。</dd>
+                    </dl>
+                    <a class="btn animate delay" href="sakura_bank_detail.html">詳しい説明を見る</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="w-container">
+            <h2 class="heading-lv2 animate slide-from-left">
+                ABOUT
+                <span>私について</span>
+            </h2>
+            <div class="about-content">
+                <div class="about-icon animate slide-from-right delay"><img src="img/icon.webp" alt="似顔絵アイコン"></div>
+                <div class="about-text animate slide-from-left delay">
+                    <p class="name">羽入友梨</p>
+                    <p class="desc">
+                        お下がりのPCを譲り受けたことがきっかけとなり、小学4年生より趣味でWEB制作をしております。
+                    </p>
+                    <p class="desc">
+                        2022年には「Recursion」にてコンピューターサイエンスの基礎を学習。<br>
+                        JavaScriptを使用し、WEBサイトに機能を持たせられるようになりました。
+                    </p>
+                    <p class="desc">
+                        現在は、デザインカンプよりコーディングを行う練習をしております。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-content w-container animate">
+            <h2 class="heading-lv2 animate slide-from-left">
+                CONTACT
+                <span>連絡先</span>
+            </h2>
+            <div class="contact-desc">
+                <p class="animate animate-from-left">
+                    当サイトをご覧いただきありがとうございます。<br>
+                    ご連絡は<span class="strong">フォーム</span>、もしくは<span claSS="strong">Wantedly</span>にて受け付けております。
+                </p>
+               
+                <ul class="contact-icon animate slide-from-left delay">
+                    <li><a class="form" href="form.html"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a class="wantedly" href="https://www.wantedly.com/id/yuri_hanyuu" target="_blank"><i class="fa-solid fa-w"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container w-container">
+            <div footer-logo>
+                <img src="img/logo_wh.svg" alt="" width="80px" height="80px">
+                <p class="site-name">YURI HANYU</p>
+            </div>
+            <ul class="footer-list">
+                <li><a href="index.html">TOP</a></li>
+                <li><a href="index.html#works">WORKS</a></li>
+                <li><a href="index.html#about">ABOUT</a></li>
+                <li><a href="index.html#contact">CONTACT</a></li>
+            </ul>
+        </div>
+        <p class="copy">&copy; YURI HANYU All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
